@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen android:title="More about us"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
+    <PreferenceScreen android:layout="@layout/lc_banner" android:key="logo" />
+    <Preference android:title="ROM Name" android:key="name" android:summary="LOLLICRAFT-M" />
+    <Preference android:title="Lollicraft Version" android:key="version" android:summary="V1.0" />
+    <Preference android:title="Changelog" android:key="changelog" android:summary="View changelog of Lollicraft" android:fragment="com.android.settings.lollicraft.ChangeLog" />
+	<Preference android:title="Features" android:key="lc_features" android:summary="View feature list of Lollicraft" android:fragment="com.android.settings.lollicraft.LCFeatures" />
+    <Preference android:title="Device Maintainers" android:key="maintainers" android:summary="View maintainers of LC" />
+    <Preference android:title="Contributors" android:key="contributors" android:summary="Check out the contributors of LC" />
+    <PreferenceCategory android:title="Links" android:key="links">
+        <Preference android:title="Share LC" android:key="share" android:summary="Let others know about Lollicraft" />
+        <Preference android:title="Visit our website" android:key="lc_website" android:summary="Get all the information about this rom" />
+        <Preference android:title="Facebook group" android:key="lc_group" android:summary="Get to know more about our rom by joining our fb group" />
+        <Preference android:title="Visit TechRemix" android:key="lc_techremix" android:summary="Visit techremix for more exiciting roms and tutorials" />
+        <Preference android:title="Visit our Facebook page" android:key="lc_facebook" android:summary="Visit our facebook page" />
+        <Preference android:title="GooglePlus Community" android:key="lc_google_plus" android:summary="View our googleplus community" />
+        <Preference android:title="" android:key="lc_donate" android:summary="If you wanna donate to us juts call - imalif. Donations will be apperciated" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="Main Developer" android:key="devs">
+        <com.android.settings.widgets.DeveloperPreference android:title="imalif-(main/senior dev)" settings:gplusHandle="103156235729811766837" settings:nameDev="Afzal Hosasain Alif(imalif)" settings:emailDev="afzalhossainalif@gmail.com" settings:fbLink="@string/alif_fb" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="Secondary Developer" android:key="dev_categorie_two">
+        <com.android.settings.widgets.DeveloperPreference android:title="rahul-(co-dev)" settings:gplusHandle="102077860021649867443" settings:nameDev="Rahul Sehgal(superboy)" settings:emailDev="rahul.sehgal@gmail.com" settings:fbLink="@string/rahul_fb" />
+    </PreferenceCategory>
+</PreferenceScreen>
