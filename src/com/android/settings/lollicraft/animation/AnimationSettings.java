@@ -32,7 +32,7 @@ public class AnimationSettings
     {
       ArrayList localArrayList = new ArrayList();
       paramAnonymousContext = new SearchIndexableResource(paramAnonymousContext);
-      paramAnonymousContext.xmlResId = 2131230849;
+      paramAnonymousContext.xmlResId = R.xml.animation_settings;
       localArrayList.add(paramAnonymousContext);
       return localArrayList;
     }
@@ -50,7 +50,7 @@ public class AnimationSettings
   public void onCreate(Bundle paramBundle)
   {
     super.onCreate(paramBundle);
-    addPreferencesFromResource(2131230849);
+    addPreferencesFromResource(R.xml.animation_settings);
     getActivity().getContentResolver();
     paramBundle = getPreferenceScreen();
     this.mToastAnimation = ((ListPreference)findPreference("toast_animation"));
