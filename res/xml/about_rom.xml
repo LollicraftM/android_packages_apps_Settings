@@ -16,7 +16,7 @@
         <Preference android:title="Visit TechRemix" android:key="lc_techremix" android:summary="Visit techremix for more exiciting roms and tutorials" />
         <Preference android:title="Visit our Facebook page" android:key="lc_facebook" android:summary="Visit our facebook page" />
         <Preference android:title="GooglePlus Community" android:key="lc_google_plus" android:summary="View our googleplus community" />
-        <Preference android:title="" android:key="lc_donate" android:summary="If you wanna donate to us juts call - imalif. Donations will be apperciated" />
+        <Preference android:title="" android:key="lc_donate" android:summary="If you wanna donate to us just call - imalif. Donations will be apperciated" />
     </PreferenceCategory>
     <PreferenceCategory android:title="Main Developer" android:key="devs">
         <com.android.settings.widgets.DeveloperPreference android:title="imalif-(main/senior dev)" settings:gplusHandle="103156235729811766837" settings:nameDev="Afzal Hosasain Alif(imalif)" settings:emailDev="afzalhossainalif@gmail.com" settings:fbLink="@string/alif_fb" />
