@@ -142,6 +142,16 @@
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
+            
+        <!--LC Extra Acitivity -->
+            
+        <activity android:label="@string/lollicraft_customizations" android:name="Settings$ExtraActivity" android:taskAffinity="">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+            <meta-data android:name="com.android.settings.FRAGMENT_CLASS" android:value="com.android.settings.lollicraft.extras"/>
+        </activity>
 
         <!-- Wireless Controls -->
 
