@@ -37,7 +37,7 @@ public class About
   public void onCreate(Bundle paramBundle)
   {
     super.onCreate(paramBundle);
-    addPreferencesFromResource(2131230846);
+    addPreferencesFromResource(R.xml.about_rom);
     getPreferenceScreen();
     getContentResolver();
     this.mSiteUrl = findPreference("lc_website");
@@ -108,8 +108,8 @@ public class About
         paramPreferenceScreen = new Intent();
         paramPreferenceScreen.setAction("android.intent.action.SEND");
         paramPreferenceScreen.setType("text/plain");
-        paramPreferenceScreen.putExtra("android.intent.extra.TEXT", String.format(getActivity().getString(2131496714), new Object[0]));
-        startActivity(Intent.createChooser(paramPreferenceScreen, getActivity().getString(2131496715)));
+        paramPreferenceScreen.putExtra("android.intent.extra.TEXT", String.format(getActivity().getString(R.string.share_message), new Object[0]));
+        startActivity(Intent.createChooser(paramPreferenceScreen, getActivity().getString(R.string.share_chooser_title)));
       }
     }
     return super.onPreferenceTreeClick(paramPreferenceScreen, paramPreference);
