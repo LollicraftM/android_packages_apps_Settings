@@ -215,12 +215,12 @@ public class AppMultiSelectListPreference
     {
       if (paramView == null)
       {
-        paramLayoutInflater = paramLayoutInflater.inflate(2130968940, null);
+        paramLayoutInflater = paramLayoutInflater.inflate(R.layout.ad_excluded_app_item, null);
         paramView = new AppViewHolder();
         paramView.rootView = paramLayoutInflater;
-        paramView.appName = ((TextView)paramLayoutInflater.findViewById(2131951637));
-        paramView.appIcon = ((ImageView)paramLayoutInflater.findViewById(2131951636));
-        paramView.checkBox = ((CheckBox)paramLayoutInflater.findViewById(16908289));
+        paramView.appName = ((TextView)paramLayoutInflater.findViewById(R.id.app_name));
+        paramView.appIcon = ((ImageView)paramLayoutInflater.findViewById(R.id.app_icon));
+        paramView.checkBox = ((CheckBox)paramLayoutInflater.findViewById(android.R.id.checkbox));
         paramLayoutInflater.setTag(paramView);
         return paramView;
       }
