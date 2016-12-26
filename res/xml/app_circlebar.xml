@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen android:title="@string/category_app_circle_bar_title"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
+    <com.android.settings.cyanogenmod.SystemSettingSwitchPreference android:title="@string/app_circle_bar_title" android:key="enable_app_circle_bar" android:summary="@string/app_circle_bar_summary" />
+    <com.android.settings.lollicraft.AppMultiSelectListPreference android:persistent="false" android:title="@string/app_circle_bar_included_apps_title" android:key="app_circle_bar_included_apps" android:summary="@string/app_circle_bar_included_apps_summary" android:dependency="enable_app_circle_bar" />
+    <com.android.settings.lollicraft.SeekBarPreferenceCham android:max="64" android:title="@string/trigger_width_title" android:key="trigger_width" android:summary="@string/trigger_width_summary" android:dependency="enable_app_circle_bar" android:defaultValue="4" settings:min="4.0" settings:unitsLeft="" settings:unitsRight="px" />
+    <com.android.settings.lollicraft.SeekBarPreferenceCham android:max="99" android:title="@string/trigger_top_title" android:key="trigger_top" android:summary="@string/trigger_top_summary" android:dependency="enable_app_circle_bar" android:defaultValue="0" settings:min="0.0" settings:unitsLeft="" settings:unitsRight="%" />
+    <com.android.settings.lollicraft.SeekBarPreferenceCham android:max="100" android:title="@string/trigger_bottom_title" android:key="trigger_bottom" android:summary="@string/trigger_bottom_summary" android:dependency="enable_app_circle_bar" android:defaultValue="100" settings:min="1.0" settings:unitsLeft="" settings:unitsRight="%" />
+</PreferenceScreen>

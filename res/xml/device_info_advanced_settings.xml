@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen android:title="@string/about_settings"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <Preference android:title="@string/kernel_version" android:key="kernel_version" android:summary="@string/device_info_default" />
+    <Preference android:title="@string/memory" android:key="device_memory" android:summary="@string/device_info_default" />
+    <PreferenceCategory android:title="@string/cpu_processor" android:key="category_device_cpu">
+        <Preference android:title="@string/cpu_processor_hardware" android:key="device_cpu_hardware" android:summary="@string/device_info_default" />
+        <Preference android:title="@string/cpu_type" android:key="device_cpu_type" android:summary="@string/device_info_default" />
+        <Preference android:title="@string/cpu_features" android:key="device_cpu_features" android:summary="@string/device_info_default" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/gpu_title" android:key="category_device_gpu" />
+</PreferenceScreen>
