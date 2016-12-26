@@ -58,7 +58,7 @@ public class AppCircleBar
     super.onCreate(paramBundle);
     getActivity().getContentResolver();
     getResources();
-    addPreferencesFromResource(2131230850);
+    addPreferencesFromResource(R.xml.app_circle_sidebar);
     this.mIncludedAppCircleBar = ((AppMultiSelectListPreference)getPreferenceScreen().findPreference("app_circle_bar_included_apps"));
     paramBundle = getIncludedApps();
     if (paramBundle != null) {
